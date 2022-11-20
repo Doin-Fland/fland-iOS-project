@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		258EA24B2929CB5900A289C3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258EA24A2929CB5900A289C3 /* UIColor+Extension.swift */; };
+		258EA24D2929CB8A00A289C3 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258EA24C2929CB8A00A289C3 /* Array+Extension.swift */; };
+		258EA24F2929CBA200A289C3 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258EA24E2929CBA200A289C3 /* UIApplication+Extension.swift */; };
+		258EA2512929CBB100A289C3 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258EA2502929CBB100A289C3 /* UIFont+Extension.swift */; };
+		258EA2532929CBC300A289C3 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258EA2522929CBC300A289C3 /* UIImage+Extension.swift */; };
+		258EA2552929CBD800A289C3 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258EA2542929CBD800A289C3 /* UINavigationController+Extension.swift */; };
+		258EA2572929CBE800A289C3 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258EA2562929CBE800A289C3 /* UIDevice+Extension.swift */; };
+		258EA2592929CBFC00A289C3 /* NotificationCenter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258EA2582929CBFC00A289C3 /* NotificationCenter+Extension.swift */; };
+		258EA25B2929CC0B00A289C3 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258EA25A2929CC0B00A289C3 /* UIBarButtonItem+Extension.swift */; };
 		2598133E29210FE600C7AC26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2598133D29210FE600C7AC26 /* AppDelegate.swift */; };
 		2598134029210FE600C7AC26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2598133F29210FE600C7AC26 /* SceneDelegate.swift */; };
 		2598134229210FE600C7AC26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2598134129210FE600C7AC26 /* ViewController.swift */; };
@@ -16,6 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		258EA24A2929CB5900A289C3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		258EA24C2929CB8A00A289C3 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		258EA24E2929CBA200A289C3 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		258EA2502929CBB100A289C3 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		258EA2522929CBC300A289C3 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		258EA2542929CBD800A289C3 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		258EA2562929CBE800A289C3 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		258EA2582929CBFC00A289C3 /* NotificationCenter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Extension.swift"; sourceTree = "<group>"; };
+		258EA25A2929CC0B00A289C3 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		2598133A29210FE600C7AC26 /* Fland-iOS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fland-iOS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2598133D29210FE600C7AC26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2598133F29210FE600C7AC26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,15 +74,88 @@
 		2598133C29210FE600C7AC26 /* Fland-iOS-Project */ = {
 			isa = PBXGroup;
 			children = (
-				2598133D29210FE600C7AC26 /* AppDelegate.swift */,
-				2598133F29210FE600C7AC26 /* SceneDelegate.swift */,
-				2598134129210FE600C7AC26 /* ViewController.swift */,
-				2598134329210FE600C7AC26 /* Main.storyboard */,
+				259813522921116300C7AC26 /* Sources */,
+				259813512921115D00C7AC26 /* Resources */,
+			);
+			path = "Fland-iOS-Project";
+			sourceTree = "<group>";
+		};
+		259813512921115D00C7AC26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				2598134629210FE700C7AC26 /* Assets.xcassets */,
 				2598134829210FE700C7AC26 /* LaunchScreen.storyboard */,
 				2598134B29210FE700C7AC26 /* Info.plist */,
 			);
-			path = "Fland-iOS-Project";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		259813522921116300C7AC26 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				25981359292111A000C7AC26 /* App */,
+				259813572921118B00C7AC26 /* Extension */,
+				259813562921117D00C7AC26 /* Network */,
+				259813552921117300C7AC26 /* Repository */,
+				259813542921116F00C7AC26 /* ViewModel */,
+				259813532921116B00C7AC26 /* View */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		259813532921116B00C7AC26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2598134329210FE600C7AC26 /* Main.storyboard */,
+				2598134129210FE600C7AC26 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		259813542921116F00C7AC26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		259813552921117300C7AC26 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		259813562921117D00C7AC26 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		259813572921118B00C7AC26 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				258EA24A2929CB5900A289C3 /* UIColor+Extension.swift */,
+				258EA24C2929CB8A00A289C3 /* Array+Extension.swift */,
+				258EA24E2929CBA200A289C3 /* UIApplication+Extension.swift */,
+				258EA2502929CBB100A289C3 /* UIFont+Extension.swift */,
+				258EA2522929CBC300A289C3 /* UIImage+Extension.swift */,
+				258EA2542929CBD800A289C3 /* UINavigationController+Extension.swift */,
+				258EA2562929CBE800A289C3 /* UIDevice+Extension.swift */,
+				258EA2582929CBFC00A289C3 /* NotificationCenter+Extension.swift */,
+				258EA25A2929CC0B00A289C3 /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		25981359292111A000C7AC26 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2598133D29210FE600C7AC26 /* AppDelegate.swift */,
+				2598133F29210FE600C7AC26 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +229,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				258EA2512929CBB100A289C3 /* UIFont+Extension.swift in Sources */,
 				2598134229210FE600C7AC26 /* ViewController.swift in Sources */,
+				258EA2592929CBFC00A289C3 /* NotificationCenter+Extension.swift in Sources */,
+				258EA24D2929CB8A00A289C3 /* Array+Extension.swift in Sources */,
+				258EA25B2929CC0B00A289C3 /* UIBarButtonItem+Extension.swift in Sources */,
+				258EA2572929CBE800A289C3 /* UIDevice+Extension.swift in Sources */,
+				258EA2532929CBC300A289C3 /* UIImage+Extension.swift in Sources */,
 				2598133E29210FE600C7AC26 /* AppDelegate.swift in Sources */,
 				2598134029210FE600C7AC26 /* SceneDelegate.swift in Sources */,
+				258EA24F2929CBA200A289C3 /* UIApplication+Extension.swift in Sources */,
+				258EA24B2929CB5900A289C3 /* UIColor+Extension.swift in Sources */,
+				258EA2552929CBD800A289C3 /* UINavigationController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,22 +389,27 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5WAUHBZJ8Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Fland-iOS-Project/Info.plist";
+				INFOPLIST_FILE = "Fland-iOS-Project/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Fland;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "doin.Fland-iOS-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlandIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,22 +422,27 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5WAUHBZJ8Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Fland-iOS-Project/Info.plist";
+				INFOPLIST_FILE = "Fland-iOS-Project/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Fland;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "doin.Fland-iOS-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FlandIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
