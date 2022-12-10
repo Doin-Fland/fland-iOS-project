@@ -8,12 +8,12 @@
 import UIKit
 
 extension UIApplication {
-// indicates if current device is in landscape orientation
-var isLandscape: Bool {
-    if UIDevice.current.orientation.isValidInterfaceOrientation {
-        return UIDevice.current.orientation.isLandscape
-    } else  {
-        return windows.first?.windowScene?.interfaceOrientation.isLandscape ?? false
+    // indicates if current device is in landscape orientation
+    var isLandscape: Bool {
+        if UIDevice.current.orientation.isValidInterfaceOrientation {
+            return UIDevice.current.orientation.isLandscape
+        } else  {
+            return windows.first?.windowScene?.interfaceOrientation.isLandscape ?? false
+        }
     }
-}
 }
