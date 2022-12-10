@@ -20,16 +20,21 @@ class SplashViewController: UIViewController {
     
     let welcomeSubLabel: UILabel = {
         let label = UILabel()
-        label.text = "업무와 수입을 자유롭게 관리해보세요."
-        label.font = UIFont.spoqa(14, .medium)
+        let text = "업무와 수입을 자유롭게 관리해보세요."
+        label.text = text
+        label.setTextWithLineHeight(text, .callout)
+        
+        // TODO: 컬러셋 변경 필요 Design System 에 맞게
+        label.textColor = UIColor.Dark700()
         return label
     }()
     
     let appleLoginButton: UIButton = {
         let button = UIButton()
-        button.setTitleColor(UIColor.blue, for: .normal)
+        button.backgroundColor = .black
+        button.setTitleColor(UIColor.white, for: .normal)
         button.setTitle("Apple로 로그인", for: .normal)
-        button.titleLabel?.setTextWithLineHeight("Apple로 로그인")
+        button.titleLabel?.setTextWithLineHeight("Apple로 로그인", .headline)
         return button
     }()
 }
@@ -40,12 +45,26 @@ extension SplashViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
+        setupAction()
     }
 }
 
 // MARK: - Actions
 extension SplashViewController {
     
+    @objc func appleLoginButtonDidTap() {
+        let tabBarController = MainTabBarController()
+        let navigationController
+        = UINavigationController(
+            rootViewController: tabBarController
+        )
+        
+        // TODO: Change Root View Controller
+        self.view.window?.replaceRootViewControllerWith(
+            navigationController,
+            animated: true,
+            completion: nil)
+    }
 }
 
 // MARK: - Helpers
@@ -89,8 +108,13 @@ extension SplashViewController {
             make.trailing.equalTo(view.snp.trailing).inset(20)
             make.height.equalTo(56)
         }
-        
-        
+    }
+    
+    func setupAction() {
+        self.appleLoginButton.addTarget(
+            self,
+            action: #selector(appleLoginButtonDidTap),
+            for: .touchUpInside)
     }
 }
 

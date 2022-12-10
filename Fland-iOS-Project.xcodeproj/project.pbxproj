@@ -13,6 +13,11 @@
 		253B60C42934CE0D0044E1FA /* SpoqaHanSansNeo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 253B60BF2934CE0C0044E1FA /* SpoqaHanSansNeo-Bold.otf */; };
 		253B60C52934CE0D0044E1FA /* SpoqaHanSansNeo-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 253B60C02934CE0C0044E1FA /* SpoqaHanSansNeo-Medium.otf */; };
 		253B60C62934CE0D0044E1FA /* SpoqaHanSansNeo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 253B60C12934CE0D0044E1FA /* SpoqaHanSansNeo-Regular.otf */; };
+		2584CE3C2944924E00B66496 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584CE3B2944924E00B66496 /* HomeViewController.swift */; };
+		2584CE3E29449A6E00B66496 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584CE3D29449A6E00B66496 /* UIViewController+Extension.swift */; };
+		2584CE402944A06500B66496 /* NotificationImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584CE3F2944A06500B66496 /* NotificationImage.swift */; };
+		2584CE422944A1C100B66496 /* SettingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584CE412944A1C100B66496 /* SettingImage.swift */; };
+		2584CE442944A32000B66496 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584CE432944A32000B66496 /* MainTabBarController.swift */; };
 		258EA24B2929CB5900A289C3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258EA24A2929CB5900A289C3 /* UIColor+Extension.swift */; };
 		258EA24D2929CB8A00A289C3 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258EA24C2929CB8A00A289C3 /* Array+Extension.swift */; };
 		258EA24F2929CBA200A289C3 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258EA24E2929CBA200A289C3 /* UIApplication+Extension.swift */; };
@@ -29,6 +34,13 @@
 		2598134229210FE600C7AC26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2598134129210FE600C7AC26 /* ViewController.swift */; };
 		2598134729210FE700C7AC26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2598134629210FE700C7AC26 /* Assets.xcassets */; };
 		2598134A29210FE700C7AC26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2598134829210FE700C7AC26 /* LaunchScreen.storyboard */; };
+		25AF9CD72944A89C00630089 /* HomeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF9CD62944A89C00630089 /* HomeImage.swift */; };
+		25AF9CD92944A93A00630089 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF9CD82944A93A00630089 /* StatisticViewController.swift */; };
+		25AF9CDB2944A95E00630089 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF9CDA2944A95E00630089 /* CommunityViewController.swift */; };
+		25AF9CDD2944A98200630089 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF9CDC2944A98200630089 /* MoreViewController.swift */; };
+		25AF9CDF2944AAD100630089 /* StatisticImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF9CDE2944AAD100630089 /* StatisticImage.swift */; };
+		25AF9CE12944AB8500630089 /* CommunityImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF9CE02944AB8500630089 /* CommunityImage.swift */; };
+		25AF9CE32944ABCA00630089 /* MoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF9CE22944ABCA00630089 /* MoreImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +50,11 @@
 		253B60BF2934CE0C0044E1FA /* SpoqaHanSansNeo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.otf"; sourceTree = "<group>"; };
 		253B60C02934CE0C0044E1FA /* SpoqaHanSansNeo-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Medium.otf"; sourceTree = "<group>"; };
 		253B60C12934CE0D0044E1FA /* SpoqaHanSansNeo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.otf"; sourceTree = "<group>"; };
+		2584CE3B2944924E00B66496 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2584CE3D29449A6E00B66496 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2584CE3F2944A06500B66496 /* NotificationImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationImage.swift; sourceTree = "<group>"; };
+		2584CE412944A1C100B66496 /* SettingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingImage.swift; sourceTree = "<group>"; };
+		2584CE432944A32000B66496 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		258EA24A2929CB5900A289C3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		258EA24C2929CB8A00A289C3 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		258EA24E2929CBA200A289C3 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
@@ -55,6 +72,13 @@
 		2598134629210FE700C7AC26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2598134929210FE700C7AC26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2598134B29210FE700C7AC26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25AF9CD62944A89C00630089 /* HomeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeImage.swift; sourceTree = "<group>"; };
+		25AF9CD82944A93A00630089 /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		25AF9CDA2944A95E00630089 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
+		25AF9CDC2944A98200630089 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		25AF9CDE2944AAD100630089 /* StatisticImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticImage.swift; sourceTree = "<group>"; };
+		25AF9CE02944AB8500630089 /* CommunityImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityImage.swift; sourceTree = "<group>"; };
+		25AF9CE22944ABCA00630089 /* MoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +105,12 @@
 			isa = PBXGroup;
 			children = (
 				253B60BA2934CD710044E1FA /* Logo.swift */,
+				2584CE3F2944A06500B66496 /* NotificationImage.swift */,
+				2584CE412944A1C100B66496 /* SettingImage.swift */,
+				25AF9CD62944A89C00630089 /* HomeImage.swift */,
+				25AF9CDE2944AAD100630089 /* StatisticImage.swift */,
+				25AF9CE02944AB8500630089 /* CommunityImage.swift */,
+				25AF9CE22944ABCA00630089 /* MoreImage.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -151,7 +181,12 @@
 			children = (
 				253B60B82934CD560044E1FA /* Common */,
 				2598134129210FE600C7AC26 /* ViewController.swift */,
+				2584CE432944A32000B66496 /* MainTabBarController.swift */,
 				258EA25F2929CCC200A289C3 /* SplashViewController.swift */,
+				2584CE3B2944924E00B66496 /* HomeViewController.swift */,
+				25AF9CD82944A93A00630089 /* StatisticViewController.swift */,
+				25AF9CDA2944A95E00630089 /* CommunityViewController.swift */,
+				25AF9CDC2944A98200630089 /* MoreViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +224,7 @@
 				258EA2562929CBE800A289C3 /* UIDevice+Extension.swift */,
 				258EA2582929CBFC00A289C3 /* NotificationCenter+Extension.swift */,
 				258EA25A2929CC0B00A289C3 /* UIBarButtonItem+Extension.swift */,
+				2584CE3D29449A6E00B66496 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -283,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2584CE3E29449A6E00B66496 /* UIViewController+Extension.swift in Sources */,
 				258EA2512929CBB100A289C3 /* UIFont+Extension.swift in Sources */,
 				2598134229210FE600C7AC26 /* ViewController.swift in Sources */,
 				258EA2592929CBFC00A289C3 /* NotificationCenter+Extension.swift in Sources */,
@@ -292,10 +329,21 @@
 				258EA2602929CCC200A289C3 /* SplashViewController.swift in Sources */,
 				258EA2532929CBC300A289C3 /* UIImage+Extension.swift in Sources */,
 				253B60BB2934CD710044E1FA /* Logo.swift in Sources */,
+				25AF9CE12944AB8500630089 /* CommunityImage.swift in Sources */,
+				25AF9CDF2944AAD100630089 /* StatisticImage.swift in Sources */,
+				25AF9CD72944A89C00630089 /* HomeImage.swift in Sources */,
+				2584CE3C2944924E00B66496 /* HomeViewController.swift in Sources */,
+				25AF9CE32944ABCA00630089 /* MoreImage.swift in Sources */,
+				2584CE402944A06500B66496 /* NotificationImage.swift in Sources */,
+				2584CE422944A1C100B66496 /* SettingImage.swift in Sources */,
+				2584CE442944A32000B66496 /* MainTabBarController.swift in Sources */,
+				25AF9CD92944A93A00630089 /* StatisticViewController.swift in Sources */,
+				25AF9CDD2944A98200630089 /* MoreViewController.swift in Sources */,
 				2598133E29210FE600C7AC26 /* AppDelegate.swift in Sources */,
 				2598134029210FE600C7AC26 /* SceneDelegate.swift in Sources */,
 				258EA24F2929CBA200A289C3 /* UIApplication+Extension.swift in Sources */,
 				258EA24B2929CB5900A289C3 /* UIColor+Extension.swift in Sources */,
+				25AF9CDB2944A95E00630089 /* CommunityViewController.swift in Sources */,
 				258EA2552929CBD800A289C3 /* UINavigationController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
