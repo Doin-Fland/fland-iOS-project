@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250BFBD42950783C00E99A07 /* FlandRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250BFBD32950783C00E99A07 /* FlandRoomViewController.swift */; };
+		250BFBD72950785400E99A07 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250BFBD62950785400E99A07 /* SummaryViewController.swift */; };
 		253B60BB2934CD710044E1FA /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253B60BA2934CD710044E1FA /* Logo.swift */; };
 		253B60C22934CE0D0044E1FA /* SpoqaHanSansNeo-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 253B60BD2934CE0C0044E1FA /* SpoqaHanSansNeo-Thin.otf */; };
 		253B60C32934CE0D0044E1FA /* SpoqaHanSansNeo-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 253B60BE2934CE0C0044E1FA /* SpoqaHanSansNeo-Light.otf */; };
 		253B60C42934CE0D0044E1FA /* SpoqaHanSansNeo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 253B60BF2934CE0C0044E1FA /* SpoqaHanSansNeo-Bold.otf */; };
 		253B60C52934CE0D0044E1FA /* SpoqaHanSansNeo-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 253B60C02934CE0C0044E1FA /* SpoqaHanSansNeo-Medium.otf */; };
 		253B60C62934CE0D0044E1FA /* SpoqaHanSansNeo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 253B60C12934CE0D0044E1FA /* SpoqaHanSansNeo-Regular.otf */; };
+		2555665E298533BF003DFF11 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 2555665D298533BF003DFF11 /* RxCocoa */; };
+		25556660298533BF003DFF11 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 2555665F298533BF003DFF11 /* RxRelay */; };
+		25556662298533BF003DFF11 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 25556661298533BF003DFF11 /* RxSwift */; };
 		2584CE3C2944924E00B66496 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584CE3B2944924E00B66496 /* HomeViewController.swift */; };
 		2584CE3E29449A6E00B66496 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584CE3D29449A6E00B66496 /* UIViewController+Extension.swift */; };
 		2584CE402944A06500B66496 /* NotificationImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584CE3F2944A06500B66496 /* NotificationImage.swift */; };
@@ -41,9 +46,14 @@
 		25AF9CDF2944AAD100630089 /* StatisticImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF9CDE2944AAD100630089 /* StatisticImage.swift */; };
 		25AF9CE12944AB8500630089 /* CommunityImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF9CE02944AB8500630089 /* CommunityImage.swift */; };
 		25AF9CE32944ABCA00630089 /* MoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF9CE22944ABCA00630089 /* MoreImage.swift */; };
+		25C48AF12950802500A20F7E /* SummaryCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C48AF02950802500A20F7E /* SummaryCollectionViewLayout.swift */; };
+		25C48AF3295086A700A20F7E /* SummaryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C48AF2295086A700A20F7E /* SummaryCollectionView.swift */; };
+		25C48AF5295086BA00A20F7E /* SummaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C48AF4295086BA00A20F7E /* SummaryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		250BFBD32950783C00E99A07 /* FlandRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlandRoomViewController.swift; sourceTree = "<group>"; };
+		250BFBD62950785400E99A07 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		253B60BA2934CD710044E1FA /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		253B60BD2934CE0C0044E1FA /* SpoqaHanSansNeo-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Thin.otf"; sourceTree = "<group>"; };
 		253B60BE2934CE0C0044E1FA /* SpoqaHanSansNeo-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Light.otf"; sourceTree = "<group>"; };
@@ -79,6 +89,9 @@
 		25AF9CDE2944AAD100630089 /* StatisticImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticImage.swift; sourceTree = "<group>"; };
 		25AF9CE02944AB8500630089 /* CommunityImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityImage.swift; sourceTree = "<group>"; };
 		25AF9CE22944ABCA00630089 /* MoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreImage.swift; sourceTree = "<group>"; };
+		25C48AF02950802500A20F7E /* SummaryCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCollectionViewLayout.swift; sourceTree = "<group>"; };
+		25C48AF2295086A700A20F7E /* SummaryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCollectionView.swift; sourceTree = "<group>"; };
+		25C48AF4295086BA00A20F7E /* SummaryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +99,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25556660298533BF003DFF11 /* RxRelay in Frameworks */,
+				2555665E298533BF003DFF11 /* RxCocoa in Frameworks */,
+				25556662298533BF003DFF11 /* RxSwift in Frameworks */,
 				258EA25E2929CC7400A289C3 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +109,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		250BFBD12950781700E99A07 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				250BFBD52950783E00E99A07 /* Summary */,
+				250BFBD22950782200E99A07 /* FlandRoom */,
+				2584CE3B2944924E00B66496 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		250BFBD22950782200E99A07 /* FlandRoom */ = {
+			isa = PBXGroup;
+			children = (
+				250BFBD32950783C00E99A07 /* FlandRoomViewController.swift */,
+			);
+			path = FlandRoom;
+			sourceTree = "<group>";
+		};
+		250BFBD52950783E00E99A07 /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				25C48AEF2950801100A20F7E /* SummaryCollectionView */,
+				250BFBD62950785400E99A07 /* SummaryViewController.swift */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
 		253B60B82934CD560044E1FA /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,11 +222,11 @@
 		259813532921116B00C7AC26 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				250BFBD12950781700E99A07 /* Home */,
 				253B60B82934CD560044E1FA /* Common */,
 				2598134129210FE600C7AC26 /* ViewController.swift */,
 				2584CE432944A32000B66496 /* MainTabBarController.swift */,
 				258EA25F2929CCC200A289C3 /* SplashViewController.swift */,
-				2584CE3B2944924E00B66496 /* HomeViewController.swift */,
 				25AF9CD82944A93A00630089 /* StatisticViewController.swift */,
 				25AF9CDA2944A95E00630089 /* CommunityViewController.swift */,
 				25AF9CDC2944A98200630089 /* MoreViewController.swift */,
@@ -238,6 +281,16 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		25C48AEF2950801100A20F7E /* SummaryCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				25C48AF02950802500A20F7E /* SummaryCollectionViewLayout.swift */,
+				25C48AF2295086A700A20F7E /* SummaryCollectionView.swift */,
+				25C48AF4295086BA00A20F7E /* SummaryCollectionViewCell.swift */,
+			);
+			path = SummaryCollectionView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,6 +309,9 @@
 			name = "Fland-iOS-Project";
 			packageProductDependencies = (
 				258EA25D2929CC7400A289C3 /* SnapKit */,
+				2555665D298533BF003DFF11 /* RxCocoa */,
+				2555665F298533BF003DFF11 /* RxRelay */,
+				25556661298533BF003DFF11 /* RxSwift */,
 			);
 			productName = "Fland-iOS-Project";
 			productReference = 2598133A29210FE600C7AC26 /* Fland-iOS-Project.app */;
@@ -287,6 +343,7 @@
 			mainGroup = 2598133129210FE600C7AC26;
 			packageReferences = (
 				258EA25C2929CC7300A289C3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				2555665C298533BF003DFF11 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 2598133B29210FE600C7AC26 /* Products */;
 			projectDirPath = "";
@@ -320,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2584CE3E29449A6E00B66496 /* UIViewController+Extension.swift in Sources */,
+				25C48AF5295086BA00A20F7E /* SummaryCollectionViewCell.swift in Sources */,
 				258EA2512929CBB100A289C3 /* UIFont+Extension.swift in Sources */,
 				2598134229210FE600C7AC26 /* ViewController.swift in Sources */,
 				258EA2592929CBFC00A289C3 /* NotificationCenter+Extension.swift in Sources */,
@@ -338,12 +396,16 @@
 				2584CE422944A1C100B66496 /* SettingImage.swift in Sources */,
 				2584CE442944A32000B66496 /* MainTabBarController.swift in Sources */,
 				25AF9CD92944A93A00630089 /* StatisticViewController.swift in Sources */,
+				250BFBD72950785400E99A07 /* SummaryViewController.swift in Sources */,
 				25AF9CDD2944A98200630089 /* MoreViewController.swift in Sources */,
+				25C48AF3295086A700A20F7E /* SummaryCollectionView.swift in Sources */,
 				2598133E29210FE600C7AC26 /* AppDelegate.swift in Sources */,
 				2598134029210FE600C7AC26 /* SceneDelegate.swift in Sources */,
 				258EA24F2929CBA200A289C3 /* UIApplication+Extension.swift in Sources */,
 				258EA24B2929CB5900A289C3 /* UIColor+Extension.swift in Sources */,
+				250BFBD42950783C00E99A07 /* FlandRoomViewController.swift in Sources */,
 				25AF9CDB2944A95E00630089 /* CommunityViewController.swift in Sources */,
+				25C48AF12950802500A20F7E /* SummaryCollectionViewLayout.swift in Sources */,
 				258EA2552929CBD800A289C3 /* UINavigationController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,6 +626,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2555665C298533BF003DFF11 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		258EA25C2929CC7300A289C3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -575,6 +645,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2555665D298533BF003DFF11 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2555665C298533BF003DFF11 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		2555665F298533BF003DFF11 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2555665C298533BF003DFF11 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		25556661298533BF003DFF11 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2555665C298533BF003DFF11 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		258EA25D2929CC7400A289C3 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 258EA25C2929CC7300A289C3 /* XCRemoteSwiftPackageReference "SnapKit" */;
