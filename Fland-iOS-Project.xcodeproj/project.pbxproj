@@ -18,6 +18,11 @@
 		2555665E298533BF003DFF11 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 2555665D298533BF003DFF11 /* RxCocoa */; };
 		25556660298533BF003DFF11 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 2555665F298533BF003DFF11 /* RxRelay */; };
 		25556662298533BF003DFF11 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 25556661298533BF003DFF11 /* RxSwift */; };
+		2555666929853873003DFF11 /* JoinRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2555666829853873003DFF11 /* JoinRequest.swift */; };
+		2555666B29853878003DFF11 /* JoinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2555666A29853878003DFF11 /* JoinResponse.swift */; };
+		2555666D298538D8003DFF11 /* JoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2555666C298538D8003DFF11 /* JoinAPI.swift */; };
+		2555666F298539DA003DFF11 /* JoinNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2555666E298539DA003DFF11 /* JoinNetworkError.swift */; };
+		2555668029853F89003DFF11 /* JoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2555667F29853F89003DFF11 /* JoinModel.swift */; };
 		2584CE3C2944924E00B66496 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584CE3B2944924E00B66496 /* HomeViewController.swift */; };
 		2584CE3E29449A6E00B66496 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584CE3D29449A6E00B66496 /* UIViewController+Extension.swift */; };
 		2584CE402944A06500B66496 /* NotificationImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2584CE3F2944A06500B66496 /* NotificationImage.swift */; };
@@ -60,6 +65,11 @@
 		253B60BF2934CE0C0044E1FA /* SpoqaHanSansNeo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.otf"; sourceTree = "<group>"; };
 		253B60C02934CE0C0044E1FA /* SpoqaHanSansNeo-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Medium.otf"; sourceTree = "<group>"; };
 		253B60C12934CE0D0044E1FA /* SpoqaHanSansNeo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.otf"; sourceTree = "<group>"; };
+		2555666829853873003DFF11 /* JoinRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinRequest.swift; sourceTree = "<group>"; };
+		2555666A29853878003DFF11 /* JoinResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinResponse.swift; sourceTree = "<group>"; };
+		2555666C298538D8003DFF11 /* JoinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinAPI.swift; sourceTree = "<group>"; };
+		2555666E298539DA003DFF11 /* JoinNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNetworkError.swift; sourceTree = "<group>"; };
+		2555667F29853F89003DFF11 /* JoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinModel.swift; sourceTree = "<group>"; };
 		2584CE3B2944924E00B66496 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2584CE3D29449A6E00B66496 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		2584CE3F2944A06500B66496 /* NotificationImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationImage.swift; sourceTree = "<group>"; };
@@ -170,6 +180,40 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		2555666329853505003DFF11 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2555666C298538D8003DFF11 /* JoinAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2555666629853828003DFF11 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				255566672985386D003DFF11 /* Join */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		255566672985386D003DFF11 /* Join */ = {
+			isa = PBXGroup;
+			children = (
+				2555666829853873003DFF11 /* JoinRequest.swift */,
+				2555666A29853878003DFF11 /* JoinResponse.swift */,
+				2555666E298539DA003DFF11 /* JoinNetworkError.swift */,
+			);
+			path = Join;
+			sourceTree = "<group>";
+		};
+		2555667E29853F80003DFF11 /* Join */ = {
+			isa = PBXGroup;
+			children = (
+				2555667F29853F89003DFF11 /* JoinModel.swift */,
+			);
+			path = Join;
+			sourceTree = "<group>";
+		};
 		2598133129210FE600C7AC26 = {
 			isa = PBXGroup;
 			children = (
@@ -209,11 +253,10 @@
 		259813522921116300C7AC26 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2555666629853828003DFF11 /* Entities */,
+				2555666329853505003DFF11 /* Network */,
 				25981359292111A000C7AC26 /* App */,
 				259813572921118B00C7AC26 /* Extension */,
-				259813562921117D00C7AC26 /* Network */,
-				259813552921117300C7AC26 /* Repository */,
-				259813542921116F00C7AC26 /* ViewModel */,
 				259813532921116B00C7AC26 /* View */,
 			);
 			path = Sources;
@@ -222,6 +265,7 @@
 		259813532921116B00C7AC26 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2555667E29853F80003DFF11 /* Join */,
 				250BFBD12950781700E99A07 /* Home */,
 				253B60B82934CD560044E1FA /* Common */,
 				2598134129210FE600C7AC26 /* ViewController.swift */,
@@ -232,27 +276,6 @@
 				25AF9CDC2944A98200630089 /* MoreViewController.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		259813542921116F00C7AC26 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		259813552921117300C7AC26 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		259813562921117D00C7AC26 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		259813572921118B00C7AC26 /* Extension */ = {
@@ -324,7 +347,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					2598133929210FE600C7AC26 = {
@@ -376,16 +399,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2555666F298539DA003DFF11 /* JoinNetworkError.swift in Sources */,
 				2584CE3E29449A6E00B66496 /* UIViewController+Extension.swift in Sources */,
 				25C48AF5295086BA00A20F7E /* SummaryCollectionViewCell.swift in Sources */,
 				258EA2512929CBB100A289C3 /* UIFont+Extension.swift in Sources */,
 				2598134229210FE600C7AC26 /* ViewController.swift in Sources */,
 				258EA2592929CBFC00A289C3 /* NotificationCenter+Extension.swift in Sources */,
+				2555666929853873003DFF11 /* JoinRequest.swift in Sources */,
 				258EA24D2929CB8A00A289C3 /* Array+Extension.swift in Sources */,
 				258EA25B2929CC0B00A289C3 /* UIBarButtonItem+Extension.swift in Sources */,
 				258EA2572929CBE800A289C3 /* UIDevice+Extension.swift in Sources */,
 				258EA2602929CCC200A289C3 /* SplashViewController.swift in Sources */,
+				2555666D298538D8003DFF11 /* JoinAPI.swift in Sources */,
 				258EA2532929CBC300A289C3 /* UIImage+Extension.swift in Sources */,
+				2555666B29853878003DFF11 /* JoinResponse.swift in Sources */,
 				253B60BB2934CD710044E1FA /* Logo.swift in Sources */,
 				25AF9CE12944AB8500630089 /* CommunityImage.swift in Sources */,
 				25AF9CDF2944AAD100630089 /* StatisticImage.swift in Sources */,
@@ -395,6 +422,7 @@
 				2584CE402944A06500B66496 /* NotificationImage.swift in Sources */,
 				2584CE422944A1C100B66496 /* SettingImage.swift in Sources */,
 				2584CE442944A32000B66496 /* MainTabBarController.swift in Sources */,
+				2555668029853F89003DFF11 /* JoinModel.swift in Sources */,
 				25AF9CD92944A93A00630089 /* StatisticViewController.swift in Sources */,
 				250BFBD72950785400E99A07 /* SummaryViewController.swift in Sources */,
 				25AF9CDD2944A98200630089 /* MoreViewController.swift in Sources */,

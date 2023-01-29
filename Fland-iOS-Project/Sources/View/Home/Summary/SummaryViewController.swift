@@ -22,7 +22,7 @@ class SummaryViewController: UIViewController {
     
     
     // dummy
-    private let data = Data()
+    private let data = DummyData()
     
     // TODO: UIView Subclass 로 구성할 것
     private let calanderButton: UIButton = {
