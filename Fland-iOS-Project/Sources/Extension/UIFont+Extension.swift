@@ -9,13 +9,23 @@ import UIKit
 
 extension UIFont {
     enum FontWeight: String {
-        case bold    = "Bold"    // 700
-        case medium  = "Medium"  // 500
-        case regular = "Regular" // 400
-        case light   = "Light"   // 300
-        case thin    = "Thin"    // 100
+        /// 700
+        case bold    = "Bold"
+        
+        /// 500
+        case medium  = "Medium"
+        
+        /// 400
+        case regular = "Regular"
+        
+        /// 300
+        case light   = "Light"
+        
+        /// 100
+        case thin    = "Thin"
     }
     
+    /// test
     static func spoqa(
         _ size: CGFloat = 11,
         _ weight: FontWeight = .regular
