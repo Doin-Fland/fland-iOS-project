@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
     // TODO: ContainerViewController 추가 할 것.
     let bottomContainer: UIView = {
         let view = UIView()
-        view.backgroundColor = .orange
+        view.backgroundColor = .white
         return view
     }()
 }
@@ -99,6 +99,36 @@ extension HomeViewController {
             make.trailing.equalTo(view.snp.trailing)
             make.bottom.equalTo(bottomContainer.snp.top)
         }
+        
+        setupChileViewControllers()
+    }
+    
+    private func setupChileViewControllers() {
+        let flandRoomViewController = FlandRoomViewController()
+        let summaryViewController = SummaryViewController()
+        [flandRoomViewController, summaryViewController]
+            .forEach { self.addChild($0) }
+        
+        guard let flandRoomParanetView = flandRoomViewController.view else {
+            return
+        }
+        
+        guard let summaryParanetView = summaryViewController.view else {
+            return
+        }
+        
+        topContainer.addSubview(flandRoomParanetView)
+        flandRoomParanetView.snp.makeConstraints { make in
+            make.edges.equalTo(topContainer)
+        }
+        
+        bottomContainer.addSubview(summaryParanetView)
+        summaryParanetView.snp.makeConstraints { make in
+            make.edges.equalTo(bottomContainer)
+        }
+        
+        
+        
     }
     
     private func setupAction() {
