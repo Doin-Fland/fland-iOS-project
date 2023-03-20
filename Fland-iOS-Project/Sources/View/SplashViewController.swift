@@ -7,8 +7,15 @@
 
 import UIKit
 import SnapKit
+import AuthenticationServices
+
+
+//class AppleLoginService: ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding {
+//
+//}
 
 class SplashViewController: UIViewController {
+    
     // MARK: - Properties
     let welcomeLabel: UILabel = {
         let label = UILabel()
@@ -109,6 +116,26 @@ extension SplashViewController {
             make.height.equalTo(56)
         }
     }
+    
+    
+    // 공식문서 코드
+//    func setupProviderLoginView() {
+//      let authorizationButton = ASAuthorizationAppleIDButton()
+//      authorizationButton.addTarget(self, action: #selector(handleAuthorizationAppleIDButtonPress), for: .touchUpInside)
+//      self.loginProviderStackView.addArrangedSubview(authorizationButton)
+//    }
+    
+//    @objc
+//    func handleAuthorizationAppleIDButtonPress() {
+//      let appleIDProvider = ASAuthorizationAppleIDProvider()
+//      let request = appleIDProvider.createRequest()
+//      request.requestedScopes = [.fullName, .email]
+//
+//      let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+//      authorizationController.delegate = self
+//      authorizationController.presentationContextProvider = self
+//      authorizationController.performRequests()
+//    }
     
     func setupAction() {
         self.appleLoginButton.addTarget(

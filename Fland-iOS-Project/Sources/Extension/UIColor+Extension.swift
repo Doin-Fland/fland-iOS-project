@@ -7,6 +7,14 @@
 
 import UIKit.UIColor
 
+class ColorSet {
+    static let primary_600_main = UIColor(hex: "#FF5C00")
+    static let grey_000 = UIColor(hex: "#FFFFFF")
+    static let grey_100 = UIColor(hex: "#F9F9FB")
+    static let grey_600 = UIColor(hex: "#ADADB3")
+    static let grey_800 = UIColor(hex: "#636366")
+    static let grey_1000 = UIColor(hex: "#3A3A3C")
+}
 
 // MARK: - System Alerts Colors
 extension UIColor {

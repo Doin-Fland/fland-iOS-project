@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
     // TODO: ContainerViewController 추가 할 것.
     let bottomContainer: UIView = {
         let view = UIView()
-        view.backgroundColor = .orange
+        view.backgroundColor = .white
         return view
     }()
 }
