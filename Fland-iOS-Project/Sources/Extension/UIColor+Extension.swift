@@ -12,6 +12,7 @@ class ColorSet {
     static let grey_000 = UIColor(hex: "#FFFFFF")
     static let grey_100 = UIColor(hex: "#F9F9FB")
     static let grey_600 = UIColor(hex: "#ADADB3")
+    static let grey_700 = UIColor(hex: "#8E8E93")
     static let grey_800 = UIColor(hex: "#636366")
     static let grey_1000 = UIColor(hex: "#3A3A3C")
 }
