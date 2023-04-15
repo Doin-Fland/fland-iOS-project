@@ -1,7 +1,6 @@
 import UIKit
 import RxSwift
 import RxCocoa
-import SnapKit
 
 class HomeDetailTabView: UIViewController {
     //MARK: - Properties
@@ -49,13 +48,13 @@ class HomeDetailTabView: UIViewController {
         // 선택 되어 있지 않을때 폰트 및 폰트컬러
         segment.setTitleTextAttributes([
           NSAttributedString.Key.foregroundColor: ColorSet.grey_700!,
-          NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15, weight: .regular)
+          NSAttributedString.Key.font: UIFont.spoqa(15, .regular)
         ], for: .normal)
 
         // 선택 되었을때 폰트 및 폰트컬러
         segment.setTitleTextAttributes([
           NSAttributedString.Key.foregroundColor: ColorSet.grey_1000!,
-          NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15, weight: .bold)
+          NSAttributedString.Key.font: UIFont.spoqa(15, .bold)
         ], for: .selected)
         
         return segment
@@ -73,11 +72,48 @@ class HomeDetailTabView: UIViewController {
         return view
     }()
     
+    private lazy var floatingButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(systemName: "plus"), for: .normal)
+        button.tintColor = .white
+        button.backgroundColor = .systemOrange
+        button.layer.cornerRadius = 25
+        button.addShadow(color: .black, radius: 15, offset: CGSize(width: 0, height: 0), opacity: 0.1)
+        return button
+    }()
+    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
-        setup()
+        rxActionSetup()
+    }
+    
+    //MARK: - Action
+    private func rxActionSetup() {
+        segmentControl.rx.selectedSegmentIndex
+            .bind { [weak self] index in
+                guard let self = self else { return }
+                self.switchToViewController(at: index)
+                
+                self.selectedUnderLineView.snp.updateConstraints({ make in
+                    make.leading.equalTo(self.segmentControl.snp.leading).offset(CGFloat(index) * self.segmentControl.frame.size.width  / CGFloat(self.titles.count))
+                })
+                self.view.layoutIfNeeded()
+            }
+            .disposed(by: disposeBag)
+
+        backButton.rx.tap
+            .bind { [weak self] in
+                self?.navigationController?.popViewController(animated: true)
+            }
+            .disposed(by: disposeBag)
+        
+        floatingButton.rx.tap
+            .bind { [weak self] in
+                print("floatingButton tapped")
+            }
+            .disposed(by: disposeBag)
     }
     
     //MARK: - Helpers
@@ -85,6 +121,7 @@ class HomeDetailTabView: UIViewController {
         view.addSubview(navItemContainerView)
         view.addSubview(segmentContainerView)
         view.addSubview(VCContainerView)
+        view.addSubview(floatingButton)
 
         navItemContainerView.addSubview(backButton)
         segmentContainerView.addSubview(segmentControl)
@@ -133,70 +170,38 @@ class HomeDetailTabView: UIViewController {
             make.width.equalTo(segmentControl.snp.width).dividedBy(titles.count)
             make.height.equalTo(2)
         }
+        
+        floatingButton.snp.makeConstraints { make in
+            make.trailing.bottom.equalTo(view.safeAreaLayoutGuide).inset(16)
+            make.width.height.equalTo(50)
+        }
     }
     
     private func switchToViewController(at index: Int) {
-        let newViewController = viewController(for: index)
-        guard newViewController != currentViewController else { return }
-
+        // 기존 VC 제거
+        currentViewController?.willMove(toParent: nil)
+        currentViewController?.view.removeFromSuperview()
         currentViewController?.removeFromParent()
-        currentViewController = newViewController
-
-        addChild(newViewController)
-        VCContainerView.addSubview(newViewController.view)
-
-        newViewController.view.snp.makeConstraints { make in
+        
+        // 선택된 VC 추가
+        let selectedVC = viewController(for: index)
+        addChild(selectedVC)
+        VCContainerView.addSubview(selectedVC.view)
+        selectedVC.view.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-        newViewController.didMove(toParent: self)
+        selectedVC.didMove(toParent: self)
+        currentViewController = selectedVC
     }
     
     private func viewController(for index: Int) -> UIViewController {
         switch index {
         case 0:
-            return FirstViewController()
+            return MyTaskListView()
         case 1:
-            return SecondViewController()
+            return MyTaskHeaderView()
         default:
             return UIViewController()
         }
-    }
-    
-    //MARK: - Action
-    private func setup() {
-        segmentControl.rx.selectedSegmentIndex
-            .bind { [weak self] index in
-                guard let self = self else { return }
-                self.switchToViewController(at: index)
-                
-                self.selectedUnderLineView.snp.updateConstraints({ make in
-                    make.leading.equalTo(self.segmentControl.snp.leading).offset(CGFloat(index) * self.segmentControl.frame.size.width  / CGFloat(self.titles.count))
-                })
-                
-                UIView.animate(withDuration: 0.3) {
-                    self.view.layoutIfNeeded()
-                }
-            }
-            .disposed(by: disposeBag)
-
-        backButton.rx.tap
-            .bind { [weak self] in
-                self?.navigationController?.popViewController(animated: true)
-            }
-            .disposed(by: disposeBag)
-    }
-}
-
-class FirstViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-    }
-}
-
-class SecondViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
     }
 }
